@@ -1,0 +1,25 @@
+{
+  "name": "hw11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "source": "index.html",
+  "scripts": {
+    "start":"parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glorimax/hw11.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glorimax/hw11/issues"
+  },
+  "homepage": "https://github.com/glorimax/hw11#readme",
+  "devDependencies": {
+    "parcel": "^2.8.0",
+    "sass": "^1.56.1"
+  }
+}

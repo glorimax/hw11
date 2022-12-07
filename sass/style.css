@@ -1,0 +1,642 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Raleway"), url("../Raleway-Thin.woff2") format("woff2"), url("../Raleway-Thin.woff") format("woff"), url("../Raleway-Thin.ttf") format("ttf"), url("../Raleway-Thin.eot") format("eot");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Open Sans"), url("../OpenSans-Light.woff2") format("woff2"), url("../OpenSans-Light.woff") format("woff"), url("../OpenSans-Light.ttf") format("ttf"), url("../OpenSans-Light.eot") format("eot");
+}
+.footer .footerpick, .contactus .contactdata, .review .commentblock .comment .mngrdata, .review .commentblock .comment, .review .commentblock, .price .priceblock, .whythis .promo, .wrapper .tabs-wrapper .tabcontent, .wrapper .tabs-wrapper, .social, .banner, .header {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer, .contactus .contactdata .contactdataleft, .contactus .contacttop, .contactus, .design, .review .reviewhead, .review, .price .priceblock .priceb, .price, .whythis .promo .block, .whythis, .wrapper .tabs-wrapper .tabcontent .leftcontent, .social .socialtext, .banner .reg, .banner .axit {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactus .contackbtn, .contactus .contacttop .contactlorem, .contactus .contacttop .contact, .design .designbtn, .design .designh5, .design .designh, .review .commentblock .comment .mngrdata .mngr, .review .commentblock .comment .mngrdata .namemngr, .review .commentblock .comment .cmnt, .review .reviewhead .reviewlorem, .review .reviewhead .reviewh, .price .priceblock .priceb .space, .price .priceblock .priceb .freefor, .price .priceblock .priceb .saleprice, .price .priceblock .priceb .option, .price .loremprice, .price .pricing, .whythis .promo .block .thougfullorem, .whythis .promo .block .thoughful, .whythis .loremwt, .whythis .wt, .wrapper .tabs-wrapper .tabcontent .leftcontent .contentdwn, .wrapper .tabs-wrapper .tabcontent .leftcontent .tabloremcontent, .wrapper .tabs-wrapper .tabcontent .leftcontent .tabcontenth3, .wrapper .tabs-wrapper .tab, .wrapper, .banner .axit .axitbtn, .banner .axit .producth5, .banner .axit .product, .banner .axit .biglogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactus .contacttop .contackline, .design .designline, .review .reviewhead .reviewline, .price .lineprice, .whythis .lineafterwt, .banner .axit .productline {
+  width: 170px;
+  border: 1px solid lightgray;
+}
+
+.review .commentblock .comment .mngrdata .namemngr, .price .priceblock .priceb .option, .whythis .promo .block .thoughful, .social .socialtext .socialmedia {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.header .navigation {
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.banner .axit .product {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer .copy, .contactus .contactdata .textarea, .contactus .contactdata .contactdataleft .inpt, .contactus .contacttop .contactlorem, .design .designh5, .review .commentblock .comment .mngrdata .mngr, .review .commentblock .comment .cmnt, .review .reviewhead .reviewlorem, .price .priceblock .priceb .space, .price .priceblock .priceb .freefor, .price .loremprice, .whythis .promo .block .thougfullorem, .whythis .loremwt, .wrapper .tabs-wrapper .tab, .social .socialtext .sociallorem, .banner .axit .producth5 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.contactus .contackbtn .sendmss, .design .designbtn .designdwnld, .banner .axit .axitbtn .axitbtdw {
+  border: 2px solid #FFFFFF;
+  background: transparent;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.banner .reg .regh4 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.banner .reg .inputbanner {
+  border: 0px;
+  border-bottom: 1px solid lightgray;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
+}
+
+.banner .reg .reggs {
+  background: #EC7979;
+  border-radius: 0px 0px 10px 10px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: white;
+  border: 0px;
+}
+
+.contactus .contacttop .contact, .design .designh, .review .reviewhead .reviewh, .price .priceblock .priceb .saleprice, .price .pricing, .whythis .wt {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  width: 100%;
+  height: 75px;
+  background: black;
+  justify-content: space-around;
+}
+.header .navigation {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.banner {
+  width: 100%;
+  height: 1026px;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)), url("../image/bg1.png") no-repeat;
+  background-size: 100%;
+}
+.banner .axit {
+  width: 50%;
+  height: 80%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.banner .axit .biglogo {
+  width: 100%;
+}
+.banner .axit .product {
+  width: 100%;
+  height: 168px;
+  text-align: center;
+}
+.banner .axit .producth5 {
+  width: 30%;
+  height: 42px;
+  color: white;
+  text-align: center;
+}
+.banner .axit .axitbtn {
+  width: 100%;
+}
+.banner .axit .axitbtn .axitbtdw {
+  width: 30%;
+  height: 58px;
+}
+.banner .axit .axitbtn .axitbtdw:hover {
+  border: 2px solid #EC7979;
+  color: #EC7979;
+}
+.banner .axit .axitbtn .axitbtdw:active {
+  background: #AB4949;
+  border: 2px solid #AB4949;
+  color: #FFFFFF;
+}
+.banner .reg {
+  width: 30%;
+  height: 450px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner .reg .regh4 {
+  width: 100%;
+  height: 90px;
+}
+.banner .reg .regh4 .red {
+  color: red;
+}
+.banner .reg .inputbanner {
+  width: 90%;
+  height: 38px;
+}
+.banner .reg .reggs {
+  width: 100%;
+  height: 60px;
+}
+.banner .reg .reggs:hover {
+  background: #AB4949;
+}
+.banner .reg .reggs:active {
+  background: #EC7979;
+  box-shadow: inset 0px 0px 10px #AB4949;
+}
+
+.social {
+  width: 100%;
+  height: 140px;
+  background: #F8EFEF;
+  justify-content: center;
+  align-items: center;
+}
+.social .socialtext {
+  width: 30%;
+}
+.social .socialtext .socialmedia {
+  width: 100%;
+}
+.social .socialtext .sociallorem {
+  width: 100%;
+  color: #86878B;
+}
+.social .sociallogo {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  width: 100%;
+  height: 640px;
+}
+.wrapper .tabs-wrapper {
+  width: 78%;
+  flex-wrap: wrap;
+  position: relative;
+}
+.wrapper .tabs-wrapper .tab {
+  width: 12%;
+  height: 40px;
+  color: #333333;
+}
+.wrapper .tabs-wrapper .input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wrapper .tabs-wrapper #tab-1:checked ~ .tab-1 {
+  border: 1px solid #C6CBCD;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 0px;
+}
+.wrapper .tabs-wrapper #tab-1:checked ~ .tabcontent {
+  border: 1px solid #C6CBCD;
+}
+.wrapper .tabs-wrapper #tab-2:checked ~ .tab-2 {
+  border: 1px solid #C6CBCD;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 0px;
+}
+.wrapper .tabs-wrapper #tab-2:checked ~ .tabcontent {
+  border: 1px solid #C6CBCD;
+}
+.wrapper .tabs-wrapper #tab-3:checked ~ .tab-3 {
+  border: 1px solid #C6CBCD;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 0px;
+}
+.wrapper .tabs-wrapper #tab-3:checked ~ .tabcontent {
+  border: 1px solid #C6CBCD;
+}
+.wrapper .tabs-wrapper .tabcontent {
+  width: 100%;
+  height: 500px;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .tabs-wrapper .tabcontent .leftcontent {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .tabs-wrapper .tabcontent .leftcontent .tabcontenth3 {
+  width: 100%;
+  height: 124px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 41px;
+  color: #000000;
+}
+.wrapper .tabs-wrapper .tabcontent .leftcontent .tabloremcontent {
+  width: 100%;
+  height: 210px;
+  text-align: center;
+}
+.wrapper .tabs-wrapper .tabcontent .leftcontent .contentdwn {
+  width: 30%;
+  height: 58px;
+  background: #EC7979;
+  border: 0px;
+  color: #FFFFFF;
+}
+.wrapper .tabs-wrapper .tabcontent .leftcontent .contentdwn:hover {
+  background: #AB4949;
+}
+.wrapper .tabs-wrapper .tabcontent .leftcontent .contentdwn:active {
+  background: #EC7979;
+  box-shadow: inset 0px 0px 10px #AB4949;
+}
+.wrapper .tabs-wrapper .tabcontent .rightcontent {
+  width: 40%;
+  height: 100%;
+  background: url(../image/Rectangle\ 111.png) no-repeat right;
+}
+
+.whythis {
+  width: 100%;
+  height: 775px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.whythis .wt {
+  width: 100%;
+  height: 150px;
+}
+.whythis .loremwt {
+  width: 100%;
+  height: 21px;
+}
+.whythis .promo {
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.whythis .promo .block {
+  width: 30%;
+  height: 383px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.whythis .promo .block .lamppick {
+  width: 100%;
+  height: 170px;
+  background: url(../image/about_icon_1.png) no-repeat center;
+}
+.whythis .promo .block .deckpick {
+  width: 100%;
+  height: 170px;
+  background: url(../image/about_icon_2.png) no-repeat center;
+}
+.whythis .promo .block .thunderpick {
+  width: 100%;
+  height: 170px;
+  background: url(../image/about_icon_3.png) no-repeat center;
+}
+.whythis .promo .block .thoughful {
+  width: 100%;
+  height: 100px;
+}
+.whythis .promo .block .thougfullorem {
+  width: 100%;
+  height: 105px;
+  text-align: center;
+}
+
+.price {
+  width: 100%;
+  height: 900px;
+  background: #F5F5F5;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.price .pricing {
+  width: 100%;
+  height: 150px;
+  text-transform: uppercase;
+}
+.price .loremprice {
+  width: 100%;
+  height: 21px;
+}
+.price .priceblock {
+  width: 100%;
+  height: 600px;
+  justify-content: space-around;
+  align-items: center;
+}
+.price .priceblock .priceb {
+  width: 30%;
+  height: 510px;
+  justify-content: center;
+  align-items: center;
+}
+.price .priceblock .priceb .option {
+  width: 100%;
+  height: 60px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  background: #333333;
+  border: 2px solid #F5F5F5;
+}
+.price .priceblock .priceb .saleprice {
+  width: 100%;
+  height: 100px;
+  color: #FFFFFF;
+  background: #333333;
+  border: 2px solid #F5F5F5;
+  text-transform: uppercase;
+}
+.price .priceblock .priceb .freefor {
+  width: 100%;
+  height: 50px;
+  background: #333333;
+  border: 2px solid #F5F5F5;
+  color: rgba(255, 255, 255, 0.5);
+}
+.price .priceblock .priceb .space {
+  width: 100%;
+  height: 50px;
+  color: #86878B;
+  background: #FFFFFF;
+  border: 2px solid #F5F5F5;
+  text-transform: capitalize;
+}
+.price .priceblock .priceb:hover {
+  margin-bottom: 20px;
+  filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+}
+
+.review {
+  width: 100%;
+  height: 630px;
+  justify-content: space-around;
+  align-items: center;
+}
+.review .reviewhead {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.review .reviewhead .reviewh {
+  width: 100%;
+  height: 150px;
+  text-transform: uppercase;
+}
+.review .reviewhead .reviewlorem {
+  width: 100%;
+  height: 21px;
+}
+.review .commentblock {
+  width: 100%;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.review .commentblock .comment {
+  width: 30%;
+  height: 336px;
+  flex-wrap: wrap;
+}
+.review .commentblock .comment .cmnt {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  background: #E2E2E2;
+  border-radius: 10px;
+}
+.review .commentblock .comment .cmnt .cmntp {
+  width: 90%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+}
+.review .commentblock .comment .cmnt::after, .review .commentblock .comment .cmnt::before {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid #E2E2E2;
+  left: 65px;
+  bottom: -20px;
+}
+.review .commentblock .comment .cmntimg {
+  width: 70px;
+  height: 70px;
+}
+.review .commentblock .comment .mngrdata {
+  width: 73%;
+  flex-wrap: wrap;
+  justify-content: right;
+}
+.review .commentblock .comment .mngrdata .namemngr {
+  width: 100%;
+  height: 54px;
+}
+.review .commentblock .comment .mngrdata .mngr {
+  width: 100%;
+  height: 21px;
+  text-align: start;
+}
+
+.design {
+  width: 100%;
+  height: 395px;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)), url("../image/bg2.png") no-repeat;
+  background-size: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.design .designh {
+  width: 100%;
+  height: 100px;
+  color: white;
+}
+.design .designh5 {
+  width: 100%;
+  height: 21px;
+  color: white;
+}
+.design .designbtn {
+  width: 50%;
+  height: 58px;
+}
+.design .designbtn .designdwnld {
+  width: 30%;
+  height: 58px;
+}
+.design .designbtn .designdwnld:hover {
+  border: 2px solid #EC7979;
+  color: #EC7979;
+}
+.design .designbtn .designdwnld:active {
+  background: #AB4949;
+  border: 2px solid #AB4949;
+  color: #FFFFFF;
+}
+
+.contactus {
+  width: 100%;
+  height: 622px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contactus .contacttop {
+  width: 100%;
+  height: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contactus .contacttop .contact {
+  width: 100%;
+  text-transform: uppercase;
+}
+.contactus .contacttop .contactlorem {
+  width: 100%;
+  height: 21px;
+}
+.contactus .contactdata {
+  width: 100%;
+  justify-content: space-between;
+}
+.contactus .contactdata .contactdataleft {
+  width: 50%;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+.contactus .contactdata .contactdataleft .inpt {
+  width: 90%;
+  height: 35px;
+  border: 0px;
+  border-bottom: 1px solid #BDBDBD;
+  color: #BDBDBD;
+}
+.contactus .contactdata .textarea {
+  padding-top: 20px;
+  width: 40%;
+  height: 164px;
+  border: 0px;
+  border-bottom: 1px solid #BDBDBD;
+  resize: none;
+}
+.contactus .contackbtn {
+  width: 30%;
+  height: 58px;
+}
+.contactus .contackbtn .sendmss {
+  width: 100%;
+  height: 58px;
+  background: #EC7979;
+}
+.contactus .contackbtn .sendmss:hover {
+  border: 2px solid #EC7979;
+  color: #FFFFFF;
+}
+.contactus .contackbtn .sendmss:active {
+  background: #AB4949;
+  border: 2px solid #AB4949;
+  color: #FFFFFF;
+}
+
+.footer {
+  width: 100%;
+  height: 164px;
+  background: black;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footerpick {
+  width: 50%;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .copy {
+  width: 100%;
+  height: 21px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}/*# sourceMappingURL=style.css.map */

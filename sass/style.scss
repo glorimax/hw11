@@ -1,0 +1,708 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway'),
+        url('../Raleway-Thin.woff2') format('woff2'),
+        url('../Raleway-Thin.woff') format('woff'),
+        url('../Raleway-Thin.ttf') format('ttf'),
+        url('../Raleway-Thin.eot') format('eot');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans'),
+        url('../OpenSans-Light.woff2') format('woff2'),
+        url('../OpenSans-Light.woff') format('woff'),
+        url('../OpenSans-Light.ttf') format('ttf'),
+        url('../OpenSans-Light.eot') format('eot');
+}
+
+$graylorem: #86878B;
+$mwidth: 100%;
+$hwidth: 50%;
+$iwidth: 30%;
+
+%flexrow{
+    display: flex;
+    flex-direction: row;
+}
+%flexcolumn{
+    display: flex;
+    flex-direction: column;
+}
+%flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%downline{
+    width: 170px;
+    border: 1px solid lightgray;
+}
+%soclog{
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: #333333;
+}
+%txtdecnav{
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: capitalize;
+}
+%prodh{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+%prodlorem{
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+%btnaxit{
+    border: 2px solid #FFFFFF;
+    background: transparent;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+%regh4{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #333333;
+}
+%inputreg{
+    border: 0px;
+    border-bottom: 1px solid lightgray;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #BDBDBD;
+}
+%regbtn{
+    background: #EC7979;
+    border-radius: 0px 0px 10px 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+    border: 0px;
+}
+%wtsc{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    width: $mwidth;
+    height: 75px;
+    background: black;
+    @extend %flexrow;
+    justify-content: space-around;
+    .navigation{
+        width: $iwidth;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @extend %txtdecnav;
+    }
+}
+.banner{
+    width: $mwidth;
+    height: 1026px;
+    @extend %flexrow;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(rgba(255, 255, 255, -2), rgba(0, 0, 0, 0.8)),
+    url('../image/bg1.png') no-repeat;
+    background-size: 100%;
+    .axit{
+        width: $hwidth;
+        height: 80%;        
+        @extend %flexcolumn;        
+        justify-content: space-evenly;
+        align-items: center;
+        .biglogo{
+            width: $mwidth;
+            @extend %flexcenter;
+        }
+        .product{
+            width: $mwidth;
+            height: 168px;
+            @extend %prodh, %flexcenter;
+            text-align: center;
+        }
+        .productline{
+            @extend %downline;
+        }
+        .producth5{
+            width: $iwidth;
+            height: 42px;
+            @extend %flexcenter, %prodlorem;
+            color: white;
+            text-align: center;
+        }
+        .axitbtn{
+            width: $mwidth;
+            @extend %flexcenter;
+            .axitbtdw{
+            width: $iwidth;
+            height: 58px;
+            @extend %btnaxit;
+        }
+        .axitbtdw:hover{
+            border: 2px solid #EC7979;
+            color: #EC7979;
+        }
+        .axitbtdw:active{
+            background: #AB4949;
+            border: 2px solid #AB4949;
+            color: #FFFFFF;
+        }      
+        }
+    }    
+    .reg{
+        width: $iwidth;
+        height: 450px;
+        background:#FFFFFF;
+        border-radius: 10px;
+        @extend %flexcolumn;        
+        justify-content: space-between;
+        align-items: center;
+        .regh4{
+            width: $mwidth;
+            height: 90px;
+            @extend %regh4;
+            .red{
+                color: red;
+            }
+        }
+        .inputbanner{
+            width: 90%;
+            height: 38px;
+            @extend %inputreg;
+        }
+        .reggs{
+            width: 100%;
+            height: 60px;
+            @extend %regbtn;
+        }
+        .reggs:hover{
+            background: #AB4949;
+        }
+        .reggs:active{
+            background: #EC7979;
+            box-shadow: inset 0px 0px 10px #AB4949;
+        }
+    }
+}
+.social{
+    width: $mwidth;
+    height: 140px;
+    background: #F8EFEF;
+    @extend %flexrow;
+    justify-content: center;
+    align-items: center;
+    .socialtext{
+        width: $iwidth;
+        @extend %flexcolumn;
+        .socialmedia{
+            width: $mwidth;
+            @extend %soclog;
+        }
+        .sociallorem{
+            width: $mwidth;
+            @extend %prodlorem;
+            color: #86878B;
+        }      
+    }
+    .sociallogo{
+        width: $hwidth;
+        display: flex;
+        justify-content: space-between;
+    }        
+}
+.wrapper{
+    width: $mwidth;
+    height: 640px;
+    @extend %flexcenter;
+    .tabs-wrapper{
+        width: 78%;
+        @extend %flexrow;
+        flex-wrap: wrap;
+        position: relative;
+        .tab{
+            width: 12%;
+            height: 40px;
+            @extend %prodlorem, %flexcenter;
+            color: #333333;
+        }
+        .input{
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #tab-1:checked ~ .tab-1 { border: 1px solid #C6CBCD; border-radius: 5px 5px 0px 0px; border-bottom: 0px;}
+        #tab-1:checked ~ .tabcontent { border: 1px solid #C6CBCD;}
+        #tab-2:checked ~ .tab-2 { border: 1px solid #C6CBCD; border-radius: 5px 5px 0px 0px; border-bottom: 0px;}
+        #tab-2:checked ~ .tabcontent { border: 1px solid #C6CBCD;}
+        #tab-3:checked ~ .tab-3 { border: 1px solid #C6CBCD; border-radius: 5px 5px 0px 0px; border-bottom: 0px;}
+        #tab-3:checked ~ .tabcontent { border: 1px solid #C6CBCD;}
+        .tabcontent{
+            width: $mwidth;
+            height: 500px;
+            @extend %flexrow;
+            align-items: center;
+            justify-content: space-between;
+            .leftcontent{
+                width: $hwidth;
+                @extend %flexcolumn;
+                justify-content: center;
+                align-items: center;
+                .tabcontenth3{
+                    width: $mwidth;
+                    height: 124px;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 30px;
+                    line-height: 41px;
+                    color: #000000;
+                    @extend %flexcenter;
+                }
+                .tabloremcontent{
+                    width: $mwidth;
+                    height: 210px;
+                    text-align:center;
+                    @extend %flexcenter;
+                }
+                .contentdwn{
+                    width: $iwidth;
+                    height: 58px;
+                    background: #EC7979;
+                    border: 0px;
+                    color: #FFFFFF;
+                    @extend %flexcenter;
+                }
+                .contentdwn:hover{
+                    background: #AB4949;
+                }
+                .contentdwn:active{
+                    background: #EC7979;
+                    box-shadow: inset 0px 0px 10px #AB4949;
+                }
+            }
+            .rightcontent{
+                width: 40%;
+                height: 100%;
+                background: url(../image/Rectangle\ 111.png) no-repeat right;
+            }
+        }
+    }
+}
+.whythis{
+    width: $mwidth;
+    height: 775px;
+    @extend %flexcolumn;
+    justify-content: space-evenly;
+    align-items: center;
+    .wt{
+        width: $mwidth;
+        height: 150px;
+        @extend %wtsc, %flexcenter;
+    }
+    .lineafterwt{
+        @extend %downline;
+    }
+    .loremwt{
+        width: $mwidth;
+        height: 21px;
+        @extend %prodlorem, %flexcenter;
+    }
+    .promo{
+        width: $mwidth;
+        @extend %flexrow;
+        justify-content: space-evenly;
+        align-items: center;
+        .block{
+            width: $iwidth;
+            height: 383px;
+            @extend %flexcolumn;
+            justify-content: space-evenly;
+            align-items: center;
+            .lamppick{
+                width: $mwidth;
+                height: 170px;
+                background: url(../image/about_icon_1.png) no-repeat center;
+            }
+            .deckpick{
+                width: $mwidth;
+                height: 170px;
+                background: url(../image/about_icon_2.png) no-repeat center;
+            }
+            .thunderpick{
+                width: $mwidth;
+                height: 170px;
+                background: url(../image/about_icon_3.png) no-repeat center;
+            }
+            .thoughful{
+                width: $mwidth;
+                height: 100px;
+                @extend %soclog, %flexcenter;
+            }
+            .thougfullorem{
+                width: $mwidth;
+                height: 105px;
+                @extend %prodlorem, %flexcenter;
+                text-align: center;
+            }
+        }
+    }
+}
+.price{
+    width: $mwidth;
+    height: 900px;
+    background: #F5F5F5;
+    @extend %flexcolumn;
+    justify-content: space-evenly;
+    align-items: center;
+    .pricing{
+        width: 100%;
+        height: 150px;
+        @extend %wtsc, %flexcenter;
+        text-transform: uppercase;
+    }
+    .lineprice{
+        @extend %downline;
+    }
+    .loremprice{
+        width: $mwidth;
+        height: 21px;
+        @extend %prodlorem, %flexcenter;
+
+    }
+    .priceblock{
+        width: $mwidth;
+        height: 600px;
+        @extend %flexrow;
+        justify-content: space-around;
+        align-items: center;
+        .priceb{
+            width: $iwidth;
+            height: 510px;
+            @extend %flexcolumn;
+            justify-content: center;
+            align-items: center;
+            .option{
+                width: $mwidth;
+                height: 60px;
+                @extend %soclog, %flexcenter;
+                text-transform: capitalize;
+                color: #FFFFFF;
+                background: #333333;
+                border: 2px solid #F5F5F5;
+            }
+            .saleprice{
+                width: $mwidth;
+                height: 100px;
+                color: #FFFFFF;
+                background: #333333;
+                border: 2px solid #F5F5F5;
+                @extend %wtsc, %flexcenter;
+                text-transform: uppercase;
+            }
+            .freefor{
+                width: $mwidth;
+                height: 50px;
+                background: #333333;
+                border: 2px solid #F5F5F5;
+                color: rgba(255, 255, 255, 0.5);
+                @extend %prodlorem, %flexcenter;
+            }
+            .space{
+                width: $mwidth;
+                height: 50px;
+                color: #86878B;
+                background: #FFFFFF;
+                border: 2px solid #F5F5F5;
+                @extend %prodlorem, %flexcenter;
+                text-transform: capitalize;
+            }
+        }
+        .priceb:hover{
+            margin-bottom: 20px;
+            filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+        }
+
+    }
+}
+.review{
+    width: $mwidth;
+    height: 630px;
+    @extend %flexcolumn;
+    justify-content: space-around;
+    align-items: center;
+    .reviewhead{
+        width: $mwidth;
+        @extend %flexcolumn;
+        justify-content: center;
+        align-items: center;
+        .reviewh{
+            width: 100%;
+            height: 150px;
+            @extend %wtsc, %flexcenter;
+            text-transform: uppercase;
+        }
+        .reviewline{
+            @extend %downline;
+        }
+        .reviewlorem{
+            width: $mwidth;
+            height: 21px;
+            @extend %prodlorem, %flexcenter;
+        }
+    }
+    .commentblock{
+        width: $mwidth;
+        @extend %flexrow;
+        justify-content: space-evenly;
+        text-align: center;
+        .comment{
+            width: $iwidth;
+            height: 336px;
+            @extend %flexrow;
+            flex-wrap: wrap;
+            .cmnt{
+                width: $mwidth;
+                height: 180px;
+                position: relative;
+                background: #E2E2E2;
+                border-radius: 10px;
+                @extend %flexcenter, %prodlorem;
+                .cmntp{
+                    width: 90%;
+                    height: 180px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .cmnt::after, .cmnt::before{
+                content: '';
+                position: absolute;
+                background: white;
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-top: 20px solid #E2E2E2;
+                left: 65px; 
+                bottom: -20px;
+            }
+            .cmntimg{
+                width: 70px;
+                height: 70px;
+            }
+            .mngrdata{
+                width: 73%;
+                @extend %flexrow;
+                flex-wrap: wrap;
+                justify-content: right;
+                .namemngr{
+                    width: $mwidth;
+                    height: 54px;
+                    @extend %soclog, %flexcenter;
+                }
+                .mngr{
+                    width:$mwidth;
+                    height: 21px;
+                    @extend %prodlorem, %flexcenter;
+                    text-align: start;
+                }
+            }
+        }
+    }
+}
+.design{
+    width: $mwidth;
+    height: 395px;
+    background: linear-gradient(rgba(255, 255, 255, -2), rgba(0, 0, 0, 0.8)),
+    url('../image/bg2.png') no-repeat;
+    background-size: 100%;
+    @extend %flexcolumn;
+    justify-content: space-evenly;
+    align-items: center;
+    .designh{
+        width: $mwidth;
+        height: 100px;
+        @extend %flexcenter, %wtsc;
+        color: white;
+    }
+    .designline{
+        @extend %downline;
+    }
+    .designh5{
+        width: $mwidth;
+        height: 21px;
+        @extend %prodlorem, %flexcenter;
+        color: white;
+    }
+    .designbtn{
+        width: $hwidth;
+        height: 58px;
+        @extend %flexcenter;
+        .designdwnld{
+        width: $iwidth;
+        height: 58px;
+        @extend %btnaxit;
+        }
+        .designdwnld:hover{
+            border: 2px solid #EC7979;
+            color: #EC7979;
+        }
+        .designdwnld:active{
+            background: #AB4949;
+            border: 2px solid #AB4949;
+            color: #FFFFFF;
+        }
+    }
+    
+}
+.contactus{
+    width: $mwidth;
+    height: 622px;
+    @extend %flexcolumn;
+    justify-content: space-evenly;
+    align-items: center;
+    .contacttop{
+        width: $mwidth;
+        height: 200px;
+        @extend %flexcolumn;
+        justify-content: space-evenly;
+        align-items: center;
+        .contact{
+            width: $mwidth;
+            @extend %flexcenter, %wtsc;
+            text-transform: uppercase;
+        }
+        .contackline{
+            @extend %downline;
+        }
+        .contactlorem{
+            width: $mwidth;
+            height: 21px;
+            @extend %flexcenter, %prodlorem;
+        }
+    }
+    .contactdata{
+        width: $mwidth;
+        @extend %flexrow;
+        justify-content: space-between;
+        .contactdataleft{
+            width: $hwidth;
+            height: 200px;
+            @extend %flexcolumn;
+            justify-content: space-around;
+            align-items: center;
+            .inpt{
+                width: 90%;
+                height: 35px;
+                border: 0px;
+                border-bottom: 1px solid #BDBDBD ;
+                color: #BDBDBD;
+                @extend %prodlorem;
+            }
+        }
+        .textarea{
+            padding-top: 20px;
+            width: 40%;
+            height: 164px;
+            border:0px;
+            border-bottom:1px solid #BDBDBD;
+            resize: none;
+            @extend %prodlorem;
+        }        
+    }
+    .contackbtn{
+        width: $iwidth;
+        height: 58px;
+        @extend %flexcenter;
+        .sendmss{
+        width: $mwidth;
+        height: 58px;
+        @extend %btnaxit;
+        background: #EC7979;
+        }
+        .sendmss:hover{
+            border: 2px solid #EC7979;
+            color: #FFFFFF;
+        }
+        .sendmss:active{
+            background: #AB4949;
+            border: 2px solid #AB4949;
+            color: #FFFFFF;
+        }
+    }
+}
+.footer{
+    width: $mwidth;
+    height: 164px;
+    background: black;
+    @extend %flexcolumn;
+    justify-content: center;
+    align-items: center;
+    .footerpick{
+        width: $hwidth;
+        height: 100px;
+        @extend %flexrow;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .copy{
+        width: $mwidth;
+        height: 21px;
+        @extend %prodlorem;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
